@@ -1,0 +1,9 @@
+[
+  {
+    "messageText": "Argument of type 'FluentMapper<Mapper<unknown, boolean> & Name<\"userId\">>' is not assignable to parameter of type '[\"Field maps\", boolean, \"but must be able to also map\", string]'.",
+    "code": 2345,
+    "category": 1,
+    "length": 31,
+    "start": 157
+  }
+]

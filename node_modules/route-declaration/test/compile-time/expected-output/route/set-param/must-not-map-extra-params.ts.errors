@@ -1,0 +1,9 @@
+[
+  {
+    "messageText": "Argument of type 'FluentMapper<Mapper<unknown, { galaxyId: bigint; starSystemId: number; celestialBodyId: bigint; extraParam: boolean; }> & ExpectedInput<{ galaxyId: bigint; starSystemId: number; celestialBodyId: bigint; extraParam: boolean; }> & MappableInput<...>>' is not assignable to parameter of type '[\"The following parameter names do not exist\", \"extraParam\"]'.",
+    "code": 2345,
+    "category": 1,
+    "length": 202,
+    "start": 336
+  }
+]

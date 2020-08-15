@@ -1,0 +1,9 @@
+[
+  {
+    "messageText": "Argument of type 'FluentMapper<Mapper<unknown, { galaxyId: bigint; celestialBodyId: bigint; }> & ExpectedInput<{ galaxyId: bigint; celestialBodyId: bigint; }> & MappableInput<{ galaxyId: string | number | bigint; celestialBodyId: string | ... 1 more ... | bigint; }>>' is not assignable to parameter of type '[\"The following parameter names are not mapped\", \"starSystemId\"]'.",
+    "code": 2345,
+    "category": 1,
+    "length": 161,
+    "start": 336
+  }
+]

@@ -1,0 +1,40 @@
+import * as rd from "../../../../../dist";
+export declare const route_0: rd.Route<{
+    readonly method: rd.Method.Contextual;
+    readonly path: rd.Path<"galaxyId" | "starSystemId" | "celestialBodyId">;
+    readonly param: import("type-mapping").FluentMapper<import("type-mapping").Mapper<unknown, {
+        galaxyId: bigint;
+        starSystemId: number;
+        celestialBodyId: bigint;
+    }> & import("type-mapping").ExpectedInput<{
+        galaxyId: bigint;
+        starSystemId: number;
+        celestialBodyId: bigint;
+    }> & import("type-mapping").MappableInput<{
+        galaxyId: string | number | bigint;
+        starSystemId: string | number;
+        celestialBodyId: string | number | bigint;
+    }>>;
+    readonly query: undefined;
+    readonly body: undefined;
+    readonly header: undefined;
+    readonly response: import("type-mapping").FluentMapper<import("type-mapping").Mapper<unknown, {
+        galaxyName: string;
+        starSystemName: string;
+        celestialBodyName: string;
+        officialLanguages: string[];
+        population: bigint | null;
+    }> & import("type-mapping").ExpectedInput<{
+        galaxyName: string;
+        starSystemName: string;
+        celestialBodyName: string;
+        officialLanguages: string[];
+        population: bigint | null;
+    }> & import("type-mapping").MappableInput<{
+        galaxyName: string;
+        starSystemName: string;
+        celestialBodyName: string;
+        officialLanguages: string[];
+        population: string | number | bigint | null;
+    }>>;
+}>;

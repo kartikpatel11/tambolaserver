@@ -11,15 +11,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//mongoose.connect('mongodb://localhost/tamboladb',{useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/tamboladb',{useNewUrlParser: true});
 
 
 var api = require("./controllers/api")
 
-app.get('/getmycard', api.getmycard);
+app.get('/getmyticket', api.getmyticket);
 app.get('/savemygame', api.savegame);
+app.get('/getmyactivegames',api.getmyactivegames)
 app.get('/', function(req,res){
-    res.send("Hello world");
+    res.send("Hello world to "+req.query.myname);
 });
 
 app.listen(3000, function () {

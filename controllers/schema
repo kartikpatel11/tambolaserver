@@ -1,0 +1,59 @@
+
+use('tamboladb');
+db.game.drop();
+db.game.insertOne({
+  'gameid':'1',
+  'host': {
+    'hostPhNo':"9920686286",
+    'nickname':"Ruchi"
+  },
+  'participants': [{
+    'participantid':"1",
+    'phone':"9820742766",
+   'name':"Kartik",
+    'ticket': [[3,14,0,0,45,0,0,76,80], [0,0,25,37,0,0,66,78,84], [9,17,0,0,0,0,69,78,0]],
+    'prize': []
+  },
+  {
+    'participantid':"2",
+    'phone':"9820742767",
+   'name':"Ruchi",
+    'ticket': [[3,14,0,0,45,0,0,76,80], [0,0,25,37,0,0,66,78,84], [9,17,0,0,0,0,69,78,0]],
+    'prize': []
+  }],
+  "variations":{
+    "FIRST_ROW": "false",
+    "SECOND_ROW": "false"
+  },
+    'currentState':[]
+
+});
+db.game.insertOne({
+  'gameid':'2',
+  'host': {
+    'hostPhNo':"9820742767",
+    'nickname':"Kartik"
+  },  
+  'participants': [{
+    'participantid':"3",
+    'phone':"9820742769",
+   'name':"Kartik",
+    'ticket': [[3,14,0,0,45,0,0,76,80], [0,0,25,37,0,0,66,78,84], [9,17,0,0,0,0,69,78,0]],
+    'prize': [],
+    'currentState':[]
+  },
+  {
+    'participantid':"4",
+    'phone':"9920686286",
+   'name':"Ruchi",
+    'ticket': [[3,14,0,0,45,0,0,76,80], [0,0,25,37,0,0,66,78,84], [9,17,0,0,0,0,69,78,0]],
+    'prize': []
+  }],
+  "variations":{
+    "FIRST_ROW": "false",
+    "SECOND_ROW": "false",
+    "FULL_HOUSE": "false"
+  },
+    'currentState':[]
+
+});
